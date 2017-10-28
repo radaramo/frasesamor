@@ -130,7 +130,7 @@ public class SettingsFragment extends Fragment {
                 .build()
         );
 
-        settings.add(Setting.Builder(Setting.Type.HEADER)
+     /*   settings.add(Setting.Builder(Setting.Type.HEADER)
                 .icon(R.drawable.ic_toolbar_theme)
                 .title(getActivity().getResources().getString(R.string.pref_theme_header))
                 .build()
@@ -141,7 +141,7 @@ public class SettingsFragment extends Fragment {
                 .content(getActivity().getResources().getString(R.string.pref_theme_dark_desc))
                 .checkboxState(Preferences.get(getActivity()).isDarkTheme() ? 1 : 0)
                 .build()
-        );
+        );*/
 
         settings.add(Setting.Builder(Setting.Type.HEADER)
                 .icon(R.drawable.ic_toolbar_wallpapers)
@@ -175,7 +175,7 @@ public class SettingsFragment extends Fragment {
                 .build()
         );
 
-        settings.add(Setting.Builder(Setting.Type.HEADER)
+       /* settings.add(Setting.Builder(Setting.Type.HEADER)
                 .icon(R.drawable.ic_toolbar_others)
                 .title(getActivity().getResources().getString(R.string.pref_others_header))
                 .build()
@@ -184,7 +184,7 @@ public class SettingsFragment extends Fragment {
         settings.add(Setting.Builder(Setting.Type.RESET_TUTORIAL)
                 .subtitle(getActivity().getResources().getString(R.string.pref_others_reset_tutorial))
                 .build()
-        );
+        );*/
 
         mRecyclerView.setAdapter(new SettingsAdapter(getActivity(), settings));
     }
