@@ -130,7 +130,7 @@ public class SettingsFragment extends Fragment {
                 .build()
         );
 
-  /*      settings.add(Setting.Builder(Setting.Type.HEADER)
+      /*  settings.add(Setting.Builder(Setting.Type.HEADER)
                 .icon(R.drawable.ic_toolbar_theme)
                 .title(getActivity().getResources().getString(R.string.pref_theme_header))
                 .build()
@@ -175,7 +175,7 @@ public class SettingsFragment extends Fragment {
                 .build()
         );
 
-/*        settings.add(Setting.Builder(Setting.Type.HEADER)
+      /* settings.add(Setting.Builder(Setting.Type.HEADER)
                 .icon(R.drawable.ic_toolbar_others)
                 .title(getActivity().getResources().getString(R.string.pref_others_header))
                 .build()

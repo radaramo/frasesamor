@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/frasesamor.iml" filepath="$PROJECT_DIR$/frasesamor.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/wallpaperboard-master.iml" filepath="$PROJECT_DIR$/wallpaperboard-master.iml" />
     </modules>
   </component>
