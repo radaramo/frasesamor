@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Navigation View -->
-    <string name="navigation_view_wallpapers">Fondos de Pantalla</string>
+    <string name="navigation_view_wallpapers">Imágenes</string>
     <string name="navigation_view_favorites">Favoritos</string>
     <string name="navigation_view_settings">Ajustes</string>
     <string name="navigation_view_about">Acerca de</string>
@@ -110,17 +110,17 @@ que puede parecer borrosa y pixelada.</string>
     <string name="pref_theme_header">Tema</string>
     <string name="pref_theme_dark">Tema Oscuro</string>
     <string name="pref_theme_dark_desc">Cambiar entre tema oscuro o claro</string>
-    <string name="pref_wallpaper_header">Fondos de Pantalla</string>
-    <string name="pref_wallpaper_high_quality_preview">Calidad de vista previa del fondo de pantalla</string>
+    <string name="pref_wallpaper_header">Imágenes</string>
+    <string name="pref_wallpaper_high_quality_preview">Calidad de vista previa de las imágenes</string>
     <string name="pref_wallpaper_high_quality_preview_low">Baja calidad</string>
     <string name="pref_wallpaper_high_quality_preview_high">Alta calidad</string>
-    <string name="pref_wallpaper_location">Ubicación de guardado de los Fondos de Pantalla</string>
+    <string name="pref_wallpaper_location">Ubicación de guardado de las Imágenes</string>
     <string name="pref_language_header">Idioma</string>
     <string name="pref_others_header">Otros</string>
     <string name="pref_others_reset_tutorial">Restablecer tutorial</string>
     <string name="pref_others_reset_tutorial_reset">Tutorial restablecido</string>
     <!-- Permission -->
-    <string name="permission_storage_denied">Permisos de Almacenamiento necesarios para guardar los fondos de pantalla</string>
+    <string name="permission_storage_denied">Permisos de Almacenamiento necesarios para guardar las imágenes</string>
     <!-- Support Development -->
     <string name="donation_success">Gracias por realizar una donación. La usare lo mejor posible.</string>
     <!-- License -->

@@ -487,7 +487,7 @@ public class WallpaperBoardActivity extends AppCompatActivity implements Activit
             else if (id == R.id.navigation_view_settings) mPosition = 2;
            // else if (id == R.id.navigation_view_about) mPosition = 3;
             else if (id == R.id.navigation_view_donate) mPosition = 4;
-            else if (id == R.id.navigation_view_share) {
+          /*  else if (id == R.id.navigation_view_share) {
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
                 intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.share_app_subject,
@@ -504,7 +504,7 @@ public class WallpaperBoardActivity extends AppCompatActivity implements Activit
                 intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
                 startActivity(intent);
                 return false;
-            }
+            }*/
 
             item.setChecked(true);
             mDrawerLayout.closeDrawers();

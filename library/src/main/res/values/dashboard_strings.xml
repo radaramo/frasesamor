@@ -2,7 +2,7 @@
 <resources>
 
     <!-- Navigation View -->
-    <string name="navigation_view_wallpapers">Wallpapers</string>
+    <string name="navigation_view_wallpapers">Pictures</string>
     <string name="navigation_view_favorites">Favorites</string>
     <string name="navigation_view_settings">Settings</string>
     <string name="navigation_view_about">About</string>
@@ -138,11 +138,11 @@
     <string name="pref_theme_dark">Dark Theme</string>
     <string name="pref_theme_dark_desc">Switch between dark or light theme</string>
 
-    <string name="pref_wallpaper_header">Wallpaper</string>
-    <string name="pref_wallpaper_high_quality_preview">Wallpaper Preview Quality</string>
+    <string name="pref_wallpaper_header">Pictures</string>
+    <string name="pref_wallpaper_high_quality_preview">Pictures Preview Quality</string>
     <string name="pref_wallpaper_high_quality_preview_low">Low Quality</string>
     <string name="pref_wallpaper_high_quality_preview_high">High Quality</string>
-    <string name="pref_wallpaper_location">Wallpaper Save Location</string>
+    <string name="pref_wallpaper_location">Pictures Save Location</string>
 
     <string name="pref_language_header">Language</string>
 
