@@ -55,7 +55,7 @@ Active el papel tapiz de conjunto como fondo de pantalla de bloqueo en Android N
     <!-- Wallpapers -->
     <string name="wallpaper_filter">Filtrar por Categoría</string>
     <string name="wallpaper_already_downloaded">Fondo de pantalla ya descargado</string>
-    <string name="wallpaper_downloading">Descargando fondo de pantalla …</string>
+    <string name="wallpaper_downloading">Descargando imagen …</string>
     <string name="wallpaper_download_failed">No se puede descargar el fondo de pantalla</string>
     <string name="wallpaper_loading">Cargando fondo de pantalla …</string>
     <string name="wallpaper_applying">Aplicando fondo de pantalla …</string>
