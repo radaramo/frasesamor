@@ -49,6 +49,7 @@ android {
         versionCode 160
         versionName "1.6.0"
         vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
     }
 
     buildTypes {
