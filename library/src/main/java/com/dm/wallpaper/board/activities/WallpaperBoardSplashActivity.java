@@ -15,6 +15,7 @@ import com.danimahardhika.android.helpers.core.ColorHelper;
 import com.dm.wallpaper.board.R;
 import com.dm.wallpaper.board.helpers.LocaleHelper;
 import com.dm.wallpaper.board.utils.LogUtil;
+import com.google.android.gms.ads.MobileAds;
 
 import butterknife.ButterKnife;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
@@ -51,6 +52,8 @@ public class WallpaperBoardSplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         mMainActivity = mainActivity;
+
+        MobileAds.initialize(this, getString(R.string.idaplicacion));
 
         int color = ContextCompat.getColor(this, R.color.splashColor);
         TextView splashTitle = ButterKnife.findById(this, R.id.splash_title);
