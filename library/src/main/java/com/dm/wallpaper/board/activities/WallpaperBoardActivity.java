@@ -72,6 +72,7 @@ import com.dm.wallpaper.board.utils.listeners.InAppBillingListener;
 import com.dm.wallpaper.board.utils.listeners.NavigationListener;
 import com.dm.wallpaper.board.utils.listeners.TabListener;
 import com.dm.wallpaper.board.utils.views.HeaderView;
+import com.google.android.gms.ads.MobileAds;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.ImageSize;
 import com.nostra13.universalimageloader.core.imageaware.ImageViewAware;
@@ -132,6 +133,7 @@ public class WallpaperBoardActivity extends AppCompatActivity implements Activit
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wallpaper_board);
         ButterKnife.bind(this);
+        MobileAds.initialize(this, getString(R.string.idaplicacion));
         Database.get(this.getApplicationContext());
         WindowHelper.resetNavigationBarTranslucent(this,
                 WindowHelper.NavigationBarTranslucent.PORTRAIT_ONLY);
