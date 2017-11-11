@@ -73,6 +73,15 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
     </android.support.design.widget.CoordinatorLayout>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner1"></com.google.android.gms.ads.AdView>
     <android.support.design.widget.NavigationView
         android:id="@+id/navigation_view"
         android:layout_width="@dimen/navigation_view_width"
