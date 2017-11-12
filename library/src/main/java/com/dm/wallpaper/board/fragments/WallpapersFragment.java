@@ -72,7 +72,7 @@ public class WallpapersFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_wallpapers, container, false);
         ButterKnife.bind(this, view);
-        mAdView = (AdView) view.findViewById(R.id.adView);
+        mAdView = (AdView) view.findViewById(R.id.adView3);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 

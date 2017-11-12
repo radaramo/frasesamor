@@ -62,8 +62,6 @@ public class CollectionFragment extends Fragment {
     TabLayout mTab;
     @BindView(R2.id.pager)
     ViewPager mPager;
-    private AdView mAdView;
-
     private CollectionPagerAdapter mAdapter;
 
     @Nullable
@@ -71,9 +69,6 @@ public class CollectionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_collection, container, false);
         ButterKnife.bind(this, view);
-        mAdView = (AdView) view.findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
         initViewPager();
         mTab.setupWithViewPager(mPager);
         mTab.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
