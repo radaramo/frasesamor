@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-2320065636137009/2363488515"></com.google.android.gms.ads.AdView>
+        ads:adUnitId="@string/banner1"></com.google.android.gms.ads.AdView>
 
     <me.zhanghai.android.materialprogressbar.MaterialProgressBar
         android:id="@+id/progress"
