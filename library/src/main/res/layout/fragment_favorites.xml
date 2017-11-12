@@ -29,7 +29,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/banner1"></com.google.android.gms.ads.AdView>
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
 
     <ImageView
         android:id="@+id/favorite_empty"
