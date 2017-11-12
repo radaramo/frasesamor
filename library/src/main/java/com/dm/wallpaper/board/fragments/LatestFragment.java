@@ -36,6 +36,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import me.zhanghai.android.materialprogressbar.MaterialProgressBar;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import static com.dm.wallpaper.board.helpers.ViewHelper.resetViewBottomPadding;
 
 /*
@@ -69,12 +72,18 @@ public class LatestFragment extends Fragment {
     private LatestAdapter mAdapter;
     private AsyncTask mAsyncTask;
     private StaggeredGridLayoutManager mManager;
+    private AdView mAdView;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_latest, container, false);
         ButterKnife.bind(this, view);
+
+         mAdView = (AdView) view.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
         return view;
     }
 
