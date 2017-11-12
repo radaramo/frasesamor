@@ -25,6 +25,8 @@ import com.dm.wallpaper.board.utils.Extras;
 import com.dm.wallpaper.board.utils.LogUtil;
 import com.dm.wallpaper.board.utils.listeners.AppBarListener;
 import com.dm.wallpaper.board.utils.listeners.TabListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,6 +62,7 @@ public class CollectionFragment extends Fragment {
     TabLayout mTab;
     @BindView(R2.id.pager)
     ViewPager mPager;
+    private AdView mAdView;
 
     private CollectionPagerAdapter mAdapter;
 
@@ -68,6 +71,9 @@ public class CollectionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_collection, container, false);
         ButterKnife.bind(this, view);
+        mAdView = (AdView) view.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         initViewPager();
         mTab.setupWithViewPager(mPager);
         mTab.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {

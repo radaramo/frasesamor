@@ -21,6 +21,8 @@ import com.dm.wallpaper.board.applications.WallpaperBoardApplication;
 import com.dm.wallpaper.board.databases.Database;
 import com.dm.wallpaper.board.items.Category;
 import com.dm.wallpaper.board.utils.LogUtil;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.List;
 
@@ -59,12 +61,16 @@ public class CategoriesFragment extends Fragment {
     private GridLayoutManager mManager;
     private CategoriesAdapter mAdapter;
     private AsyncTask mAsyncTask;
+    private AdView mAdView;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_categories, container, false);
         ButterKnife.bind(this, view);
+        mAdView = (AdView) view.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         return view;
     }
 

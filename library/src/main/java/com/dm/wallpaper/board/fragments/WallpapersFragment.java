@@ -26,6 +26,8 @@ import com.dm.wallpaper.board.items.Wallpaper;
 import com.dm.wallpaper.board.preferences.Preferences;
 import com.dm.wallpaper.board.tasks.WallpapersLoaderTask;
 import com.dm.wallpaper.board.utils.LogUtil;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.List;
 
@@ -61,6 +63,7 @@ public class WallpapersFragment extends Fragment {
     SwipeRefreshLayout mSwipe;
     @BindView(R2.id.progress)
     MaterialProgressBar mProgress;
+    private AdView mAdView;
 
     private AsyncTask<Void, Void, Boolean> mAsyncTask;
 
@@ -69,6 +72,9 @@ public class WallpapersFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_wallpapers, container, false);
         ButterKnife.bind(this, view);
+        mAdView = (AdView) view.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         if (!Preferences.get(getActivity()).isShadowEnabled()) {
             View shadow = ButterKnife.findById(view, R.id.shadow);
